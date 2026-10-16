@@ -1,10 +1,18 @@
-# YUN KBO — website preview
+# YUN KBO 網站預覽 V2
 
-This is a **static UI preview** only. All products and dashboard figures are fictional demonstration data. It does not include real authentication, a database, persistence, an approval workflow, a functioning LINE inquiry integration, or actual product photos.
+這是 GitHub Pages 可直接顯示的**靜態設計預覽**，不是真正的線上商品管理系統。
 
-- `index.html` — storefront mockup
-- `admin.html` — administration dashboard mockup
+- `index.html`：商品網站預覽（運動、球隊、兩層分類篩選，搜尋、商品詳情、詢問清單、LINE 分享）。
+- `admin.html`：後台首頁與側邊選單的**純視覺預覽**。
 
-## Preview
+## 重要限制
 
-Open `index.html` in a browser or upload both HTML files to a static hosting service. GitHub stores source files; publishing through GitHub Pages depends on repository visibility and account plan. Do **not** use this preview to store real user or customer data.
+1. 商品、價格、圖片均為示意資料；灰色商品圖是占位圖，沒有使用實際商品照片。
+2. 購物詢問清單只保存在目前頁面記憶體中，重新整理就會消失。
+3. LINE 分享只開啟 LINE 分享網址，不會建立後台詢問紀錄。
+4. 後台未接資料庫，沒有真實登入、帳號權限、審核、Excel 匯入、圖片編輯、上架等功能。
+5. GitHub Pages 公開發布的內容，任何人都能查看。請勿在這裡存放密碼、客戶資料或私密金鑰。
+
+## 更新 GitHub Pages
+
+將 `index.html`、`admin.html`、`README.md` 放在儲存庫根目錄，覆蓋舊版並 Commit。GitHub Pages 若設定為 `main` 分支 `/ (root)`，會自動更新。
